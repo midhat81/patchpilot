@@ -19,6 +19,7 @@ PatchPilot runs against a web application and its source code. It reproduces a r
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
 - [Technology Stack](#technology-stack)
+- [Frontend Dashboard](#frontend-dashboard)
 - [Getting Started](#getting-started)
 - [What Happens When You Run It?](#what-happens-when-you-run-it)
 - [Evidence](#evidence)
@@ -473,6 +474,25 @@ patchpilot/
 - TypeScript
 - tsx
 - dotenv
+
+---
+
+## Frontend Dashboard
+
+PatchPilot includes a **React + TypeScript** dashboard built with **Vite** to visualize the autonomous debugging workflow in real time.
+
+The dashboard displays:
+
+- 🐛 Bug discovery and reproduction
+- 🔍 Root cause analysis
+- 🔧 Generated patch and code diff
+- 🧪 Automated test results
+- 🌐 Fresh-browser verification
+- ✅ Final `FIX VERIFIED` status
+
+The frontend connects to the PatchPilot Node.js API and continuously updates as the agent progresses through each stage.
+
+**Stack:** React, TypeScript, Vite, CSS
 
 ---
 
